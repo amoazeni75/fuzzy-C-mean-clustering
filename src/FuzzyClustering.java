@@ -5,11 +5,13 @@ public class FuzzyClustering {
     public ArrayList<ArrayList<Float>> data;
     public ArrayList<ArrayList<Float>> clusterCenters;
     private float u[][];
+    private float u_pre[][];
     private int clusterCount;
     private int iteration;
     private int dimention;
     private int fuzziness;
     private double epsilon;
+    public double finalError;
 
     public FuzzyClustering(){
         data = new ArrayList<>();
@@ -27,7 +29,6 @@ public class FuzzyClustering {
         //1 assign initial membership values
         assignInitialMembership();
 
-
         for (int i = 0; i < iteration; i++) {
             //2 calculate cluster centers
             calculateClusterCenters();
@@ -36,6 +37,9 @@ public class FuzzyClustering {
             updateMembershipValues();
 
             //4
+            finalError = checkConvergence();
+            if(finalError <= epsilon)
+                break;
         }
     }
 
@@ -63,6 +67,7 @@ public class FuzzyClustering {
      */
     private void assignInitialMembership(){
         u = new float[data.size()][clusterCount];
+        u_pre = new float[data.size()][clusterCount];
         Random r = new Random();
         for (int i = 0; i < data.size(); i++) {
             float sum = 0;
@@ -103,6 +108,49 @@ public class FuzzyClustering {
      * in this function we will update membership value
      */
     private void updateMembershipValues(){
-
+        for (int i = 0; i < data.size(); i++) {
+            for (int j = 0; j < clusterCount; j++) {
+                u_pre[i][j] = u[i][j];
+                float sum = 0;
+                float upper = Distance(data.get(i), clusterCenters.get(j));
+                for (int k = 0; k < clusterCount; k++) {
+                    float lower = Distance(data.get(i), clusterCenters.get(k));
+                    sum += Math.pow((upper/lower), 2/(fuzziness -1));
+                }
+                u[i][j] = 1/sum;
+            }
+        }
     }
+
+    /**
+     * get norm 2 of two point
+     * @param p1
+     * @param p2
+     * @return
+     */
+    private float Distance(ArrayList<Float> p1, ArrayList<Float> p2){
+        float sum = 0;
+        for (int i = 0; i < p1.size(); i++) {
+            sum += Math.pow(p1.get(i) - p2.get(i), 2);
+        }
+        sum = (float) Math.sqrt(sum);
+        return sum;
+    }
+
+    /**
+     * we calculate norm 2 of ||U - U_pre||
+     * @return
+     */
+    private double checkConvergence(){
+        double sum = 0;
+        for (int i = 0; i < data.size(); i++) {
+            for (int j = 0; j < clusterCount; j++) {
+                sum += Math.pow(u[i][j] - u_pre[i][j], 2);
+            }
+        }
+        return Math.sqrt(sum);
+    }
+
+    //write data to file
+    //visualizing data
 }

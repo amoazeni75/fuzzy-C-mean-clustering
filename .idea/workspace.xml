@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0dcc940c-0596-433e-97d6-e1f100be2df1" name="Default Changelist" comment="-first commit">
-      <change afterPath="$PROJECT_DIR$/src/FuzzyClustering.java" afterDir="false" />
+    <list default="true" id="0dcc940c-0596-433e-97d6-e1f100be2df1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fuzzy_c_mean_clustring/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fuzzy_c_mean_clustring/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FuzzyClustering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FuzzyClustering.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="125">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -30,15 +31,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FuzzyClustering.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="99" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
+            <state relative-caret-position="219">
+              <caret line="154" column="22" selection-start-line="154" selection-start-column="22" selection-end-line="154" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#FuzzyClustering#0;class#FuzzyClustering#0" />
+                <element signature="method#run#0;class#FuzzyClustering#0" />
+                <element signature="e#717#809#1" />
                 <element signature="docComment;method#createRandomData#0;class#FuzzyClustering#0" />
+                <element signature="method#createRandomData#0;class#FuzzyClustering#0" />
                 <element signature="docComment;method#assignInitialMembership#0;class#FuzzyClustering#0" />
                 <element signature="method#assignInitialMembership#0;class#FuzzyClustering#0" />
                 <element signature="docComment;method#calculateClusterCenters#0;class#FuzzyClustering#0" />
                 <element signature="method#calculateClusterCenters#0;class#FuzzyClustering#0" />
+                <element signature="e#2220#2782#1" />
+                <element signature="docComment;method#updateMembershipValues#0;class#FuzzyClustering#0" />
+                <element signature="method#updateMembershipValues#0;class#FuzzyClustering#0" />
+                <element signature="docComment;method#Distance#0;class#FuzzyClustering#0" />
+                <element signature="method#Distance#0;class#FuzzyClustering#0" />
+                <element signature="docComment;method#checkConvergence#0;class#FuzzyClustering#0" />
+                <element signature="method#checkConvergence#0;class#FuzzyClustering#0" />
               </folding>
             </state>
           </provider>
@@ -99,7 +111,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555870381913" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555872683663" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -141,12 +153,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555864524430</updated>
-      <workItem from="1555864526841" duration="5504000" />
+      <workItem from="1555864526841" duration="7491000" />
     </task>
+    <task id="LOCAL-00001" summary="- Fuzzy Clustering class added&#10;- assign initial membership value function added&#10;- calculate cluster center function added&#10;- generate random data with options added">
+      <created>1555870510831</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555870510831</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5504000" />
+    <option name="totallyTimeSpent" value="7491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -156,8 +176,8 @@
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
-      <window_info id="Favorites" sideWeight="0.50220263" side_tool="true" visible="true" weight="0.08018155" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49779737" visible="true" weight="0.08018155" />
+      <window_info id="Favorites" sideWeight="0.50246304" side_tool="true" visible="true" weight="0.08018155" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49753696" visible="true" weight="0.08018155" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -168,7 +188,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2569558" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33551556" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -186,6 +206,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- Fuzzy Clustering class added&#10;- assign initial membership value function added&#10;- calculate cluster center function added&#10;- generate random data with options added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Fuzzy Clustering class added&#10;- assign initial membership value function added&#10;- calculate cluster center function added&#10;- generate random data with options added" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -196,22 +220,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="125">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FuzzyClustering.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="99" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
+        <state relative-caret-position="219">
+          <caret line="154" column="22" selection-start-line="154" selection-start-column="22" selection-end-line="154" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#FuzzyClustering#0;class#FuzzyClustering#0" />
+            <element signature="method#run#0;class#FuzzyClustering#0" />
+            <element signature="e#717#809#1" />
             <element signature="docComment;method#createRandomData#0;class#FuzzyClustering#0" />
+            <element signature="method#createRandomData#0;class#FuzzyClustering#0" />
             <element signature="docComment;method#assignInitialMembership#0;class#FuzzyClustering#0" />
             <element signature="method#assignInitialMembership#0;class#FuzzyClustering#0" />
             <element signature="docComment;method#calculateClusterCenters#0;class#FuzzyClustering#0" />
             <element signature="method#calculateClusterCenters#0;class#FuzzyClustering#0" />
+            <element signature="e#2220#2782#1" />
+            <element signature="docComment;method#updateMembershipValues#0;class#FuzzyClustering#0" />
+            <element signature="method#updateMembershipValues#0;class#FuzzyClustering#0" />
+            <element signature="docComment;method#Distance#0;class#FuzzyClustering#0" />
+            <element signature="method#Distance#0;class#FuzzyClustering#0" />
+            <element signature="docComment;method#checkConvergence#0;class#FuzzyClustering#0" />
+            <element signature="method#checkConvergence#0;class#FuzzyClustering#0" />
           </folding>
         </state>
       </provider>
