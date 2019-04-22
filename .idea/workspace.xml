@@ -14,37 +14,50 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="fuzzy_c_mean_clustring" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="75">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FuzzyClustering.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="154" column="22" selection-start-line="154" selection-start-column="22" selection-end-line="154" selection-end-column="22" />
+            <state relative-caret-position="301">
+              <caret line="134" column="26" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#FuzzyClustering#0;class#FuzzyClustering#0" />
-                <element signature="method#run#0;class#FuzzyClustering#0" />
-                <element signature="e#717#809#1" />
                 <element signature="docComment;method#createRandomData#0;class#FuzzyClustering#0" />
                 <element signature="method#createRandomData#0;class#FuzzyClustering#0" />
                 <element signature="docComment;method#assignInitialMembership#0;class#FuzzyClustering#0" />
                 <element signature="method#assignInitialMembership#0;class#FuzzyClustering#0" />
                 <element signature="docComment;method#calculateClusterCenters#0;class#FuzzyClustering#0" />
-                <element signature="method#calculateClusterCenters#0;class#FuzzyClustering#0" />
-                <element signature="e#2220#2782#1" />
                 <element signature="docComment;method#updateMembershipValues#0;class#FuzzyClustering#0" />
                 <element signature="method#updateMembershipValues#0;class#FuzzyClustering#0" />
                 <element signature="docComment;method#Distance#0;class#FuzzyClustering#0" />
@@ -71,8 +84,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/FuzzyClustering.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -88,7 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,13 +117,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555872683663" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555967406440" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -153,7 +166,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555864524430</updated>
-      <workItem from="1555864526841" duration="7491000" />
+      <workItem from="1555864526841" duration="7558000" />
+      <workItem from="1555910127551" duration="2874000" />
+      <workItem from="1555934404664" duration="1562000" />
+      <workItem from="1555958151611" duration="7043000" />
     </task>
     <task id="LOCAL-00001" summary="- Fuzzy Clustering class added&#10;- assign initial membership value function added&#10;- calculate cluster center function added&#10;- generate random data with options added">
       <created>1555870510831</created>
@@ -162,45 +178,52 @@
       <option name="project" value="LOCAL" />
       <updated>1555870510831</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- update member ship value function added&#10;- check convergence function added">
+      <created>1555872742465</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555872742465</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7491000" />
+    <option name="totallyTimeSpent" value="19037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" sideWeight="0.50246304" side_tool="true" visible="true" weight="0.08018155" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49753696" visible="true" weight="0.08018155" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.08245083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.7594108" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32569557" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5008183" side_tool="true" weight="0.08018155" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33551556" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.30114567" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.7594108" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32569557" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.10514372" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +231,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Fuzzy Clustering class added&#10;- assign initial membership value function added&#10;- calculate cluster center function added&#10;- generate random data with options added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Fuzzy Clustering class added&#10;- assign initial membership value function added&#10;- calculate cluster center function added&#10;- generate random data with options added" />
+    <MESSAGE value="- update member ship value function added&#10;- check convergence function added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- update member ship value function added&#10;- check convergence function added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/PrintStream.java">
@@ -218,35 +242,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="232">
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FuzzyClustering.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="154" column="22" selection-start-line="154" selection-start-column="22" selection-end-line="154" selection-end-column="22" />
+        <state relative-caret-position="301">
+          <caret line="134" column="26" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#FuzzyClustering#0;class#FuzzyClustering#0" />
-            <element signature="method#run#0;class#FuzzyClustering#0" />
-            <element signature="e#717#809#1" />
             <element signature="docComment;method#createRandomData#0;class#FuzzyClustering#0" />
             <element signature="method#createRandomData#0;class#FuzzyClustering#0" />
             <element signature="docComment;method#assignInitialMembership#0;class#FuzzyClustering#0" />
             <element signature="method#assignInitialMembership#0;class#FuzzyClustering#0" />
             <element signature="docComment;method#calculateClusterCenters#0;class#FuzzyClustering#0" />
-            <element signature="method#calculateClusterCenters#0;class#FuzzyClustering#0" />
-            <element signature="e#2220#2782#1" />
             <element signature="docComment;method#updateMembershipValues#0;class#FuzzyClustering#0" />
             <element signature="method#updateMembershipValues#0;class#FuzzyClustering#0" />
             <element signature="docComment;method#Distance#0;class#FuzzyClustering#0" />
             <element signature="method#Distance#0;class#FuzzyClustering#0" />
             <element signature="docComment;method#checkConvergence#0;class#FuzzyClustering#0" />
             <element signature="method#checkConvergence#0;class#FuzzyClustering#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

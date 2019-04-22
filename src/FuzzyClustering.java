@@ -1,4 +1,8 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 public class FuzzyClustering {
@@ -50,15 +54,43 @@ public class FuzzyClustering {
      * @param minRange
      * @param maxRange
      */
-    public void createRandomData(int numberOfData, int dimention, float minRange, float maxRange){
+    public void createRandomData(int numberOfData, int dimention, int minRange, int maxRange, int clusterCount){
         this.dimention = dimention;
+        ArrayList<ArrayList<Integer>> centroids = new ArrayList<>();
+        centroids.add(new ArrayList<Integer>());
+        int[] numberOfDataInEachArea = new int[clusterCount];
+        int range = maxRange - minRange + 1;
+        int step = range / (clusterCount + 1);
+        for (int i = 1; i <= clusterCount; i++) {
+            centroids.get(0).add(minRange + i * step);
+        }
+
+        for (int i = 0; i < dimention - 1; i++) {
+            centroids.add((ArrayList<Integer>) centroids.get(0).clone());
+        }
+        double variance = (centroids.get(0).get(1) - centroids.get(0).get(0))/ 2.5;
+        for (int i = 0; i < dimention; i++) {
+            Collections.shuffle(centroids.get(i));
+        }
         Random r = new Random();
-        for (int i = 0; i < numberOfData; i++) {
-            ArrayList<Float> tmp = new ArrayList<>();
-            for (int j = 0; j < dimention; j++) {
-                tmp.add(r.nextFloat() * maxRange + minRange);
+        int sum = 0;
+        for (int i = 0; i < clusterCount; i++) {
+            int rg = r.nextInt(50) + 10;
+            numberOfDataInEachArea[i] = (rg);
+            sum += rg;
+        }
+        for (int i = 0; i < clusterCount; i++)
+            numberOfDataInEachArea[i] = (int)((((double)numberOfDataInEachArea[i]) / sum) * numberOfData);
+
+        Random fRandom = new Random();
+        for (int i = 0; i < clusterCount; i++) {
+            for (int j = 0; j < numberOfDataInEachArea[i]; j++) {
+                ArrayList<Float> tmp = new ArrayList<>();
+                for (int k = 0; k < dimention; k++) {
+                    tmp.add((float)(centroids.get(k).get(i) + fRandom.nextGaussian() * variance));
+                }
+                data.add(tmp);
             }
-            data.add(tmp);
         }
     }
 
@@ -151,6 +183,28 @@ public class FuzzyClustering {
         return Math.sqrt(sum);
     }
 
-    //write data to file
-    //visualizing data
+    /**
+     * write random generated data to file for visualizing
+     * @throws IOException
+     */
+    public void writeDataToFile(ArrayList<ArrayList<Float>> inpData, String fname) throws IOException {
+
+        FileWriter fileWriter = new FileWriter("./" + fname + ".csv");
+        PrintWriter printWriter = new PrintWriter(fileWriter);
+
+        for (int i = 0; i < inpData.size(); i++) {
+             String res = "";
+            for (int j = 0; j < inpData.get(i).size(); j++) {
+                if(j == inpData.get(i).size() - 1)
+                    res += inpData.get(i).get(j);
+                else
+                    res += inpData.get(i).get(j) +",";
+            }
+            printWriter.println(res);
+        }
+        printWriter.close();
+    }
+
+
+
 }
