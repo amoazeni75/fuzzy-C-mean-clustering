@@ -22,3 +22,17 @@ for more details you can visit this link : https://home.deib.polimi.it/matteucc/
   <dt>epsilon</dt>
   <dd>- threshold of error between current membership values and prevoius step</dd>
 </dl>
+<p>next we will describe arguments and functionality of methods</p>
+<dl>
+  <dt>createRandomData</dt>
+  <dd>- this function get dataset size, min and max range, number of clusters and generate random number with gaussian distribution</dd>
+  <dt>assignInitialMembership</dt>
+  <dd>- initialize first values for membership of data</dd>
+  <dt>calculateClusterCenters</dt>
+  <dd>- this function will calculate value of centroids</dd>
+  <dt>updateMembershipValues</dt>
+  <dd>- this function will update membership values depends on current centroids value</dd>
+   <dt>checkConvergence</dt>
+  <dd>- this function will calculate norm 2 of current U matrix and previous U matrix</dd>
+</dl>
+<p>after running algorithm two file will be generate, "data_set.csv" and "cluster_center.csv" that contains random data and calculated centroids</p>
