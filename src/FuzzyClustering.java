@@ -12,7 +12,7 @@ public class FuzzyClustering {
     private float u_pre[][];
     private int clusterCount;
     private int iteration;
-    private int dimention;
+    private int dimension;
     private int fuzziness;
     private double epsilon;
     public double finalError;
@@ -40,22 +40,22 @@ public class FuzzyClustering {
             //3
             updateMembershipValues();
 
-//            //4
-//            finalError = checkConvergence();
-//            if(finalError <= epsilon)
-//                break;
+            //4
+            finalError = checkConvergence();
+            if(finalError <= epsilon)
+                break;
         }
     }
 
     /**
-     * in this function we genearte random data with specific option
+     * in this function we generate random data with specific option
      * @param numberOfData
-     * @param dimention
+     * @param dimension
      * @param minRange
      * @param maxRange
      */
-    public void createRandomData(int numberOfData, int dimention, int minRange, int maxRange, int clusterCount){
-        this.dimention = dimention;
+    public void createRandomData(int numberOfData, int dimension, int minRange, int maxRange, int clusterCount){
+        this.dimension = dimension;
         ArrayList<ArrayList<Integer>> centroids = new ArrayList<>();
         centroids.add(new ArrayList<Integer>());
         int[] numberOfDataInEachArea = new int[clusterCount];
@@ -65,11 +65,11 @@ public class FuzzyClustering {
             centroids.get(0).add(minRange + i * step);
         }
 
-        for (int i = 0; i < dimention - 1; i++) {
+        for (int i = 0; i < dimension - 1; i++) {
             centroids.add((ArrayList<Integer>) centroids.get(0).clone());
         }
         double variance = (centroids.get(0).get(1) - centroids.get(0).get(0))/ 2.5;
-        for (int i = 0; i < dimention; i++) {
+        for (int i = 0; i < dimension; i++) {
             Collections.shuffle(centroids.get(i));
         }
         Random r = new Random();
@@ -86,7 +86,7 @@ public class FuzzyClustering {
         for (int i = 0; i < clusterCount; i++) {
             for (int j = 0; j < numberOfDataInEachArea[i]; j++) {
                 ArrayList<Float> tmp = new ArrayList<>();
-                for (int k = 0; k < dimention; k++) {
+                for (int k = 0; k < dimension; k++) {
                     tmp.add((float)(centroids.get(k).get(i) + fRandom.nextGaussian() * variance));
                 }
                 data.add(tmp);
@@ -120,7 +120,7 @@ public class FuzzyClustering {
         clusterCenters.clear();
         for (int i = 0; i < clusterCount; i++) {
             ArrayList<Float> tmp = new ArrayList<>();
-            for (int j = 0; j < dimention; j++) {
+            for (int j = 0; j < dimension; j++) {
                 float cluster_ij;
                 float sum1 = 0;
                 float sum2 = 0;
@@ -187,9 +187,9 @@ public class FuzzyClustering {
      * write random generated data to file for visualizing
      * @throws IOException
      */
-    public void writeDataToFile(ArrayList<ArrayList<Float>> inpData, String fname) throws IOException {
+    public void writeDataToFile(ArrayList<ArrayList<Float>> inpData, String fileName) throws IOException {
 
-        FileWriter fileWriter = new FileWriter("./" + fname + ".csv");
+        FileWriter fileWriter = new FileWriter("./" + fileName + ".csv");
         PrintWriter printWriter = new PrintWriter(fileWriter);
 
         for (int i = 0; i < inpData.size(); i++) {
@@ -204,7 +204,5 @@ public class FuzzyClustering {
         }
         printWriter.close();
     }
-
-
 
 }
