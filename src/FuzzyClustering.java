@@ -40,10 +40,10 @@ public class FuzzyClustering {
             //3
             updateMembershipValues();
 
-            //4
-            finalError = checkConvergence();
-            if(finalError <= epsilon)
-                break;
+//            //4
+//            finalError = checkConvergence();
+//            if(finalError <= epsilon)
+//                break;
         }
     }
 
@@ -125,8 +125,8 @@ public class FuzzyClustering {
                 float sum1 = 0;
                 float sum2 = 0;
                 for (int k = 0; k < data.size(); k++) {
-                    double tt = Math.pow(u[i][j], fuzziness);
-                    sum1 += tt * data.get(i).get(j);
+                    double tt = Math.pow(u[k][i], fuzziness);
+                    sum1 += tt * data.get(k).get(j);
                     sum2 += tt;
                 }
                 cluster_ij = sum1/sum2;

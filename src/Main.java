@@ -12,7 +12,7 @@ public class Main {
         String read1 = sc.nextLine();
 
         //generate random data
-        cmean.createRandomData(400,2,1,100, Integer.parseInt(read1));
+        cmean.createRandomData(300,2,1,100, Integer.parseInt(read1));
 
         //write random data
         cmean.writeDataToFile(cmean.data, "data_set");
