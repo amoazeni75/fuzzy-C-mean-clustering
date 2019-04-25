@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -10,9 +11,11 @@ public class Main {
         System.out.println("Please input number of cluster that you want :");
         Scanner sc= new Scanner(System.in);
         String read1 = sc.nextLine();
+        System.out.println("please input size of data set :");
+        String read2 = sc.nextLine();
 
         //generate random data
-        cmean.createRandomData(300,2,1,100, Integer.parseInt(read1));
+        cmean.createRandomData(Integer.parseInt(read2),2,1,100, Integer.parseInt(read1));
 
         //write random data
         cmean.writeDataToFile(cmean.data, "data_set");

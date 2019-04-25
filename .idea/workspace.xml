@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0dcc940c-0596-433e-97d6-e1f100be2df1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FuzzyClustering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FuzzyClustering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fuzzy_c_mean_clustring/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fuzzy_c_mean_clustring/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="-167">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FuzzyClustering.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="135" column="9" lean-forward="true" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
+            <state relative-caret-position="251">
+              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#FuzzyClustering#0;class#FuzzyClustering#0" />
@@ -57,6 +57,7 @@
                 <element signature="docComment;method#assignInitialMembership#0;class#FuzzyClustering#0" />
                 <element signature="method#assignInitialMembership#0;class#FuzzyClustering#0" />
                 <element signature="docComment;method#calculateClusterCenters#0;class#FuzzyClustering#0" />
+                <element signature="method#calculateClusterCenters#0;class#FuzzyClustering#0" />
                 <element signature="docComment;method#updateMembershipValues#0;class#FuzzyClustering#0" />
                 <element signature="method#updateMembershipValues#0;class#FuzzyClustering#0" />
                 <element signature="docComment;method#Distance#0;class#FuzzyClustering#0" />
@@ -84,14 +85,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/FuzzyClustering.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="522" />
+    <option name="width" value="851" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -169,7 +170,7 @@
       <workItem from="1555910127551" duration="2874000" />
       <workItem from="1555934404664" duration="1562000" />
       <workItem from="1555958151611" duration="7068000" />
-      <workItem from="1556192241568" duration="1254000" />
+      <workItem from="1556192241568" duration="1953000" />
     </task>
     <task id="LOCAL-00001" summary="- Fuzzy Clustering class added&#10;- assign initial membership value function added&#10;- calculate cluster center function added&#10;- generate random data with options added">
       <created>1555870510831</created>
@@ -192,15 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555968051761</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- some bug in calculation of centroid fixed!!!">
+      <created>1556193619871</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556193619872</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20316000" />
+    <option name="totallyTimeSpent" value="21015000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" weight="0.40188384" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -211,8 +218,8 @@
       <window_info id="Favorites" order="6" sideWeight="0.5008183" side_tool="true" weight="0.08018155" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.049833886" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.57119477" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.049833886" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -240,19 +247,8 @@
     <MESSAGE value="- Fuzzy Clustering class added&#10;- assign initial membership value function added&#10;- calculate cluster center function added&#10;- generate random data with options added" />
     <MESSAGE value="- update member ship value function added&#10;- check convergence function added" />
     <MESSAGE value="- new random function added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- new random function added" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="- some bug in calculation of centroid fixed!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="- some bug in calculation of centroid fixed!!!" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/PrintStream.java">
@@ -269,20 +265,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FuzzyClustering.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="135" column="9" lean-forward="true" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
+        <state relative-caret-position="251">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#FuzzyClustering#0;class#FuzzyClustering#0" />
@@ -291,6 +277,7 @@
             <element signature="docComment;method#assignInitialMembership#0;class#FuzzyClustering#0" />
             <element signature="method#assignInitialMembership#0;class#FuzzyClustering#0" />
             <element signature="docComment;method#calculateClusterCenters#0;class#FuzzyClustering#0" />
+            <element signature="method#calculateClusterCenters#0;class#FuzzyClustering#0" />
             <element signature="docComment;method#updateMembershipValues#0;class#FuzzyClustering#0" />
             <element signature="method#updateMembershipValues#0;class#FuzzyClustering#0" />
             <element signature="docComment;method#Distance#0;class#FuzzyClustering#0" />
@@ -298,6 +285,16 @@
             <element signature="docComment;method#checkConvergence#0;class#FuzzyClustering#0" />
             <element signature="method#checkConvergence#0;class#FuzzyClustering#0" />
             <element signature="method#writeDataToFile#0;class#FuzzyClustering#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-167">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
